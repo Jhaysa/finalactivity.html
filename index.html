@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Jhays | Portfolio</title>
+
+  <!-- CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- AOS Library -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
+
+  <!-- Typed.js -->
+  <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="logo">Jhays</a>
+      <ul class="nav-links">
+        <li><a href="#hero">Home</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="project.html">Projects</a></li>
+        <li><a href="resume.html">Resume</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <header id="hero" class="hero">
+    <div class="container hero-content" data-aos="fade-up">
+      <div class="hero-image-wrapper" data-aos="zoom-in" data-aos-delay="200">
+        <img src="./assets/image/isang.jpg" alt="Profile picture of JHAY SA" class="hero-image" />
+      </div>
+
+      <div class="hero-text" data-aos="fade-up" data-aos-delay="400">
+        <h1>Hi, I'm <span class="typed" data-typed-items="JHAY SA"></span></h1>
+        <p class="hero-description">
+          "True success isn't just measured by grades but by the growth <br>
+          and self-improvement achieved along the journey."
+        </p>
+      </div>
+    </div>
+  </header>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2025 Jhays. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- AOS Script -->
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 1000,
+      once: true
+    });
+  </script>
+
+  <!-- Typed.js initialization -->
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const typedElement = document.querySelector('.typed');
+      if (typedElement) {
+        const items = typedElement.getAttribute('data-typed-items').split(',');
+        new Typed('.typed', {
+          strings: items,
+          typeSpeed: 80,
+          backSpeed: 40,
+          backDelay: 2000,
+          loop: true
+        });
+      }
+    });
+  </script>
+
+</body>
+</html>

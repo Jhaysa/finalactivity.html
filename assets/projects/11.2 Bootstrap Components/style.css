@@ -1,0 +1,107 @@
+/* General */
+body {
+    font-family:Arial, Helvetica, sans-serif;
+    background-color: #f8f9fa;
+    margin-top: 70px; /* space for sticky navbar */
+    color: #333;
+  }
+  
+  /* Navbar */
+  .navbar {
+    background-color: #0056b3;
+  }
+  
+  .navbar-brand, .nav-link {
+    color: #fff !important;
+  }
+  
+  .nav-link:hover {
+    color: #ffa500 !important;
+  }
+  
+  /* CTA Banner */
+  .cta-banner {
+    background: linear-gradient(to right, #0056b3, #007bff);
+    color: white;
+    min-height: 60vh;
+    padding: 60px 20px;
+  }
+  
+  /* Hero Section */
+  .hero-section {
+    background: url('family.jpg') center/cover no-repeat;
+    color: white;
+    min-height: 70vh;
+    text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    padding: 60px 20px;
+  }
+  
+  /* Feature Cards */
+  .card {
+    transition: all 0.3s ease;
+    border: none;
+  }
+  
+  .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0,0,0,0.15);
+  }
+  
+  .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    border-radius: 0.5rem 0.5rem 0 0;
+  }
+  
+  .card-title {
+    color: #0056b3;
+    font-weight: 600;
+  }
+  
+  /* Buttons */
+  .btn-primary {
+    background-color: #ffa500;
+    border-color: #ffa500;
+  }
+  
+  .btn-primary:hover {
+    background-color: #ff7f00;
+  }
+  
+  .btn-outline-secondary {
+    color: #ffa500;
+    border-color: #ffa500;
+  }
+  
+  .btn-outline-secondary:hover {
+    background-color: #ffa500;
+    color: white;
+  }
+  
+  /* Postcode */
+  .postcode-section {
+    background-color: #eef2f7;
+  }
+  
+  /* Footer */
+  .footer {
+    background-color: #0056b3;
+    color: white;
+    padding: 1rem 0;
+    text-align: center;
+  }
+  
+  /* Responsive */
+  @media (max-width: 768px) {
+    .navbar-nav {
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .hero-section,
+    .cta-banner {
+      text-align: center;
+      padding: 40px 20px;
+    }
+  }
+  
